@@ -2,12 +2,13 @@ using NavigationDemo.Utilities;
 
 namespace NavigationDemo.MVVM.Pages;
 
-public partial class StartPage : ContentPage
+public partial class Page2 : ContentPage
 {
-	public StartPage()
+	public Page2()
 	{
 		InitializeComponent();
 	}
+
     protected override void OnAppearing()
     {
         base.OnAppearing();
@@ -15,6 +16,11 @@ public partial class StartPage : ContentPage
     }
     private void Button_Clicked(object sender, EventArgs e)
     {
-		Navigation.PushAsync(new Page2());
+		Navigation.PopAsync();
+    }
+
+    private void Button_Clicked_1(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new FinalPage());
     }
 }

@@ -2,9 +2,9 @@ using NavigationDemo.Utilities;
 
 namespace NavigationDemo.MVVM.Pages;
 
-public partial class StartPage : ContentPage
+public partial class FinalPage : ContentPage
 {
-	public StartPage()
+	public FinalPage()
 	{
 		InitializeComponent();
 	}
@@ -15,6 +15,11 @@ public partial class StartPage : ContentPage
     }
     private void Button_Clicked(object sender, EventArgs e)
     {
-		Navigation.PushAsync(new Page2());
+		Navigation.PopAsync();
+    }
+
+    private void Button_Clicked_1(object sender, EventArgs e)
+    {
+        Navigation.PopToRootAsync();
     }
 }
