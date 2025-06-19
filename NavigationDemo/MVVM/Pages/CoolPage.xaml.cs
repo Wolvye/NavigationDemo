@@ -1,4 +1,3 @@
-using AndroidX.Activity;
 using NavigationDemo.Utilities;
 
 namespace NavigationDemo.MVVM.Pages;
